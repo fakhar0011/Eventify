@@ -35,7 +35,7 @@ const HeroSection = () => {
           className="animate-fade-up stagger-2
                      font-display font-extrabold leading-[1.05] sm:leading-[1.03]
                      tracking-tight text-white mb-4 sm:mb-6"
-          style={{ fontSize: 'clamp(2.2rem, 8vw, 3.4rem)' }}
+          style={{ fontSize: 'clamp(2.2rem, 8vw, 3.5rem)' }}
         >
           Discover Events<br />
           <span className="text-amber">Near You</span>
