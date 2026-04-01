@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Prevent horizontal overflow on all screens */
+    overflow-x: hidden;
+  }
+  body {
+    background-color: #09090b;
+    color: #e4e4e7;
+    font-family: "DM Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  /* Better tap targets on mobile */
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@layer components {
+  /* Stagger animation helpers */
+  .stagger-1 {
+    animation-delay: 0ms;
+  }
+  .stagger-2 {
+    animation-delay: 80ms;
+  }
+  .stagger-3 {
+    animation-delay: 160ms;
+  }
+  .stagger-4 {
+    animation-delay: 240ms;
+  }
+  .stagger-5 {
+    animation-delay: 320ms;
+  }
+
+  /* Grid noise texture overlay */
+  .grid-texture {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  @screen sm {
+    .grid-texture {
+      background-size: 64px 64px;
+    }
+  }
+
+  /* Glow effect on cards */
+  .card-glow:hover {
+    box-shadow:
+      0 0 0 1px rgba(245, 166, 35, 0.3),
+      0 20px 60px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@layer utilities {
+  /* Hide scrollbar but keep scroll */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Extra small breakpoint helper */
+  @media (min-width: 480px) {
+    .xs\:flex-row {
+      flex-direction: row;
+    }
+    .xs\:w-auto {
+      width: auto;
+    }
+  }
+}
