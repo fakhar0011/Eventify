@@ -1,17 +1,14 @@
+## Tech Stack
 
-##  Tech Stack
+| Layer     | Technology                    |
+| --------- | ----------------------------- |
+| Framework | React 18 (Vite)               |
+| Styling   | Tailwind CSS v3               |
+| Language  | JavaScript ES6+ (JSX)         |
+| Fonts     | Google Fonts — Syne + DM Sans |
 
-| Layer      | Technology                    |
-| ---------- | ----------------------------- |
-| Framework  | React 18 (Vite)               |
-| Styling    | Tailwind CSS v3               |
-| Language   | JavaScript ES6+ (JSX)         |
-| Fonts      | Google Fonts — Syne + DM Sans |
+## Project Structure
 
-
-##  Project Structure
-
-```
 eventify/
 ├── src/
 │   ├── components/
@@ -26,13 +23,10 @@ eventify/
 │       └── Home.jsx       → HeroSection, EventsSection, Contact sections,Home
 ├── tailwind.config.js
 └── README.md
-```
 
----
+## How to Run
 
-##  How to Run
-
-git clone https://github.com/YOUR_USERNAME/eventspark.git
+git clone https://github.com/fakhar0011/Eventify.git
 cd eventify
 npm install
 npm run dev
